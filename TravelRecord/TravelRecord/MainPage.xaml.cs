@@ -9,9 +9,14 @@ namespace TravelRecord
 {
 	public partial class MainPage : ContentPage
 	{
-		public MainPage()
-		{
-			InitializeComponent();
-		}
-	}
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        private void Login_Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
