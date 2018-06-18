@@ -4,11 +4,19 @@
              xmlns:local="clr-namespace:TravelRecord"
              x:Class="TravelRecord.MainPage">
 
-    <StackLayout VerticalOptions="Center">
+    <StackLayout VerticalOptions="Center"
+                 Margin="20,0">
         <!-- Place new controls here -->
-        <Entry Placeholder="Email Adress"/>
-        <Entry Placeholder="Password"/>
+        <Entry x:Name="email"
+               Placeholder="Email Adress"
+               TextColor="{StaticResource blueColor}"
+               Keyboard="Email"/>
+        <Entry x:Name="password"
+               Placeholder="Password"
+               TextColor="{StaticResource blueColor}"
+               IsPassword="True"/>
         <Button x:Name="Login_Button"
+                Margin="0,40,0,0"
                 Text="Log in"
                 Clicked="Login_Button_Clicked"/>
     </StackLayout>
